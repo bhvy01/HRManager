@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 'We’ll Figure It Out' Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Featured Jobs Section */
+        #featured-jobs {
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        #featured-jobs h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .job-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .job-card {
+            background-color: #f0f0f0;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            height: 300px; /* Added height to ensure text fits properly */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .job-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .job-card p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .job-card .btn {
+            background-color: #6200ea;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .job-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .job-card .btn:hover {
+            background-color: #3700b3;
+        }
+
+        /* What We Do Section */
+        #what-we-do {
+            padding: 30px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        #what-we-do h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .service-cards {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service-card {
+            background-color: #e0e0e0;
+            padding: 20px;
+            width: 280px;
+            height: 350px; /* Increased height for better fit */
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: #6200ea;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        footer .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 20px 0;
+        }
+
+        footer .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        footer .footer-links a:hover {
+            color: #6200ea;
+        }
+
+        footer .social-media {
+            margin: 20px 0;
+        }
+
+        footer .social-media a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer .social-media a:hover {
+            color: #6200ea;
+        }
+    </style>
+</head>
+<body>
+
+    <style>
+        /* Dropdown menu */
+        .dropdown {
+            position: relative;
+        }
+    
+        /* Dropdown content initially hidden, takes full page horizontally and half vertically */
+        .dropdown-content {
+            display: none;
+            position: fixed;
+            top: 0; /* Start at the top */
+            left: 0;
+            width: 100%; /* Full width */
+            height: 50%; /* 50% of the page height */
+            background-color: black;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            padding: 20px 0;
+            overflow-y: auto; /* Allow scrolling if content overflows */
+        }
+    
+        /* Show dropdown menu when hovering over the dropdown */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    
+        /* Dropdown links */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+    
+        /* Change background color of dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+    
+        /* Button Styles */
+        .dropbtn {
+            background-color: transparent;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .dropbtn:hover {
+            background-color: #3700b3;
+        }
+    </style>
+    
+    <header>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="jobs.html" class="dropbtn">Jobs</a>
+                    <div class="dropdown-content">
+                        <a href="#">All Jobs</a>
+                        <a href="#">Full-time</a>
+                        <a href="#">Part-time</a>
+                        <a href="#">Freelance</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="services.html" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Job Placement</a>
+                        <a href="#">Employer Solutions</a>
+                        <a href="#">Interview Prep</a>
+                        <a href="#">What We Do</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="about.html" class="dropbtn">About Us</a>
+                    <div class="dropdown-content">
+                        <a href="#">Our Mission</a>
+                        <a href="#">Our Team</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html" class="dropbtn">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="#">Get in Touch</a>
+                        <a href="#">Location</a>
+                    </div>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+<!-- Hero Section -->
+<section id="hero">
+    <h1>Welcome to The 'We’ll Figure It Out' Agency</h1>
+    <p>Your dream job, figured out. Your ideal candidate, figured out. We’ve got this. Trust us, we didn’t even Google it.</p>
+    <div class="buttons">
+        <button class="btn-hero">Find a Job</button>
+        <button class="btn-hero">For Employers</button>
+    </div>
+</section>
+
+<!-- Featured Jobs Section -->
+<section id="featured-jobs">
+    <h2>Featured Jobs (Yes, They Exist!)</h2>
+    <div class="job-list">
+        <div class="job-card">
+            <h3>Graphic Designer</h3>
+            <p>Location: Remote | Full-time</p>
+            <a href="#" class="btn">Apply Now (before we change our minds!)</a>
+        </div>
+        <div class="job-card">
+            <h3>Front-end Developer</h3>
+            <p>Location: New York | Full-time</p>
+            <a href="#" class="btn">Apply Now (your browser will thank you)</a>
+        </div>
+        <div class="job-card">
+            <h3>Project Manager</h3>
+            <p>Location: Chicago | Part-time</p>
+            <a href="#" class="btn">Apply Now (we promise, no micromanaging!)</a>
+        </div>
+    </div>
+</section>
+
+<!-- What We Do Section -->
+<section id="what-we-do">
+    <h2>What We Do (And What We Do Best)</h2>
+    <p>We connect candidates with companies that are the perfect fit. And we don't stop there. Our mission is to make your job search or hiring process smoother than your morning coffee. Plus, we offer a few extra services because we’re nice like that.</p>
+    
+    <div class="service-cards">
+        <div class="service-card">
+            <h3>Job Placement</h3>
+            <p>We help you land the perfect job, no matter how obscure or specialized your skills are. We’ve placed a professional cat video watcher before. True story.</p>
+        </div>
+        <div class="service-card">
+            <h3>Employer Solutions</h3>
+            <p>We find candidates who are capable of solving problems you didn’t even know you had. We also find those who can handle fast-paced work environments, and still make a mean cup of coffee.</p>
+        </div>
+        <div class="service-card">
+            <h3>Resume Overhaul</h3>
+            <p>Is your resume looking like a relic from the 90s? Let’s update it so you look like a pro. We'll make sure it shines brighter than your grandma’s silverware collection.</p>
+        </div>
+        <div class="service-card">
+            <h3>LinkedIn Makeover</h3>
+            <p>Everyone says “Don’t judge a book by its cover,” but guess what? People judge LinkedIn profiles. Let us polish yours to perfection so you look like the rockstar you are.</p>
+        </div>
+        <div class="service-card">
+            <h3>Interview Prep</h3>
+            <p>We help you prepare for your interview, so you don’t nervously say “um” 37 times. We’ll coach you through the trickiest questions and make sure you’re ready to knock it out of the park.</p>
+        </div>
+        <div class="service-card">
+            <h3>Job Hunt Coaching</h3>
+            <p>Feeling lost in the job market? We’ll guide you like a career GPS, helping you navigate the twists, turns, and detours until you reach your destination.</p>
+        </div>
+        <div class="service-card">
+            <h3>Salary Negotiation</h3>
+            <p>We’ll help you with the art of negotiating salary, because who doesn't love getting paid more for doing the same thing? We’ll make sure you’re not underpaid or stuck with leftover pizza when you deserve steak.</p>
+        </div>
+        <div class="service-card">
+            <h3>Company Culture Matchmaking</h3>
+            <p>We don’t just find employees—we find the perfect match. We help candidates and companies align on values, culture, and vibe. You need someone who likes pizza Fridays, not just hard work.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials">
+    <h2>What Our Clients Say (We promise, they’re not our friends)</h2>
+    <div class="testimonial-cards">
+        <div class="testimonial-card">
+            <p>"The team helped me land a job I didn’t even know I wanted. I owe them my soul!"</p>
+            <strong>Emily, Job Seeker</strong>
+        </div>
+        <div class="testimonial-card">
+            <p>"Hiring has never been easier! The best decision we made this year. I’m telling you, I don’t need a second opinion."</p>
+            <strong>David, Employer</strong>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 The 'We’ll Figure It Out' Agency. All rights reserved. | Designed with ❤️</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="social-media">
+            <a href="#" target="_blank">Facebook</a>
+            <a href="#" target="_blank">Twitter</a>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
