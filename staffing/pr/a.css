@@ -1,3 +1,12 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* ================= */
 /* Base Styles       */
 /* ================= */
@@ -8,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    overflow-x: hidden;
+    /* overflow-x: hidden;  already set globally */
 }
 
 /* ----------------- */
@@ -319,6 +328,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px;
+    gap: 40px; /* Increased gap between text and image */
 }
 .ex {
     flex: 1;
