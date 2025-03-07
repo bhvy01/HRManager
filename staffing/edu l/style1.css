@@ -1,0 +1,312 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: cyan;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: lime;
+}
+
+.holo-button {
+    background: transparent;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    color: cyan;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px cyan;
+    cursor: pointer;
+}
+
+.holo-button:hover {
+    border-color: lime;
+    box-shadow: 0px 0px 20px lime;
+    color: lime;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.holo-button {
+    background: transparent;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    color: cyan;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px cyan;
+    cursor: pointer;
+}
+
+.holo-button:hover {
+    border-color: lime;
+    box-shadow: 0px 0px 20px lime;
+    color: lime;
+}
+
+.loan-type, .faq-item, .testimonial {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: black;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 2px solid cyan;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px cyan;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.holo-button {
+    background: transparent;
+    border: 2px solid cyan;
+    padding: 10px 20px;
+    color: cyan;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px cyan;
+    cursor: pointer;
+}
+
+.holo-button:hover {
+    border-color: lime;
+    box-shadow: 0px 0px 20px lime;
+    color: lime;
+}
+.home-long {
+    padding-bottom: 200px;
+}
+
+.hero {
+    padding: 50px;
+    background: radial-gradient(circle, rgba(0,255,255,0.2), rgba(0,0,0,1));
+}
+
+.why-loan, .how-it-works, .eligibility, .loan-features, .success-stories {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px cyan;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item {
+    background: rgba(52, 114, 114, 0.1);
+    padding: 20px;
+    border-left: 3px solid cyan;
+    text-align: left;
+    margin-left: 20px;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid cyan;
+    text-align: center;
+}
+
+.testimonial {
+    background: rgba(0, 255, 255, 0.1);
+    padding: 20px;
+    border-left: 3px solid lime;
+    box-shadow: 0px 0px 10px lime;
+    margin-bottom: 20px;
+}
+/* Cyberpunk Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #0d0d0d;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Glowing Effect */
+h1, h2, h3 {
+    text-align: center;
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan, 0px 0px 20px blue;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.2), rgba(0, 0, 0, 1));
+    box-shadow: 0px 0px 30px rgba(0, 255, 255, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Glowing Buttons */
+.holo-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(45deg, cyan, blue);
+    box-shadow: 0px 0px 20px cyan;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.holo-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px cyan;
+}
+
+/* Floating Effect */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px cyan;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+.container.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Loan Features Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: rgba(0, 255, 255, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid cyan;
+}
+
+th {
+    background: rgba(0, 255, 255, 0.2);
+}
+
+/* Parallax Effect */
+#bgCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Keyframes for Smooth Appearances */
+@keyframes neonPulse {
+    0% { box-shadow: 0px 0px 10px cyan; }
+    50% { box-shadow: 0px 0px 15px cyan, 0px 0px 30px blue; }
+    100% { box-shadow: 0px 0px 10px cyan; }
+}
+
+.holo-button {
+    animation: neonPulse 2s infinite alternate;
+}

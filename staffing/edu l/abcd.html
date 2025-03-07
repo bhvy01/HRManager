@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoEduLoans 🚀</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <canvas id="bgCanvas"></canvas>
+
+    <header>
+        <h1 class="logo">Neo<span>EduLoans</span></h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#types">Loan Types</a></li>
+                <li><a href="#faq">FAQs</a></li>
+                <li><a href="#calculator">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="container home-long">
+        <div class="hero">
+            <h2 class="glitch">🚀 Education Loans, Reimagined</h2>
+            <p class="fade-in delay">AI-powered. Ultra-fast. 100% digital. Unlock your future today.</p>
+            <button class="holo-button" onclick="scrollToApply()">Apply Now</button>
+        </div>
+    
+        <div class="why-loan fade-in">
+            <h2>🎓 Why Take an Education Loan?</h2>
+            <p>Education loans are designed to give students the **financial freedom** to pursue their dreams without burdening their families.</p>
+            <ul>
+                <ul>
+                    <li><a href="#home">🏠 Home  Your Loan, Your Future</a></li>
+                    <li><a href="#about">📖 About How It Works</a></li>
+                    <li><a href="#types">💰 Loan Types Find the Right Fit</a></li>
+                    <li><a href="#faq">❓ FAQs  Get Answers</a></li>
+                    <li><a href="#calculator">📊 Calculator – Plan Your Loan</a></li>
+                </ul>
+                
+        </div>
+    
+        <div class="how-it-works fade-in">
+            <h2>🔄 How It Works</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in delay">
+                    <span>📄 Step 1</span>
+                    <p>Fill out the online application form.</p>
+                </div>
+                <div class="timeline-item fade-in delay">
+                    <span>🔎 Step 2</span>
+                    <p>Upload your admission proof & KYC documents.</p>
+                </div>
+                <div class="timeline-item fade-in delay">
+                    <span>✅ Step 3</span>
+                    <p>Loan approval in **under 48 hours**.</p>
+                </div>
+                <div class="timeline-item fade-in delay">
+                    <span>💰 Step 4</span>
+                    <p>Funds disbursed directly to your institution.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="eligibility fade-in">
+            <h2>🛂 Eligibility & Requirements</h2>
+            <p>Check if you qualify for an education loan:</p>
+            <ul>
+                <li>✅ Must be enrolled in an accredited institution</li>
+                <li>✅ Must have a co-applicant (for private loans)</li>
+                <li>✅ Minimum age: 18 years</li>
+                <li>✅ Good academic record (for merit-based loans)</li>
+            </ul>
+        </div>
+    
+        <div class="loan-features fade-in">
+            <h2>📊 Loan Features & Comparison</h2>
+            <table>
+                <tr>
+                    <th>Feature</th>
+                    <th>Federal Loan</th>
+                    <th>Private Loan</th>
+                </tr>
+                <tr>
+                    <td>Interest Rate</td>
+                    <td>3% - 5%</td>
+                    <td>7% - 12%</td>
+                </tr>
+                <tr>
+                    <td>Repayment Starts</td>
+                    <td>After graduation</td>
+                    <td>Immediately</td>
+                </tr>
+                <tr>
+                    <td>Credit Check</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Loan Limit</td>
+                    <td>$50,000</td>
+                    <td>$100,000</td>
+                </tr>
+            </table>
+        </div>
+    
+        <div class="success-stories fade-in">
+            <h2>🌟 Success Stories</h2>
+            <div class="testimonial">
+                <p>“Thanks to NeoEduLoans, I studied in MIT without financial stress. The process was smooth and quick!”</p>
+                <span>– Ayesha, Class of 2024</span>
+            </div>
+            <div class="testimonial">
+                <p>“My loan was approved in just **24 hours**. This platform is a game-changer!”</p>
+                <span>– John, Harvard MBA</span>
+            </div>
+        </div>
+    </section>
+    
+    <section id="home" class="container">
+        <h2 class="fade-in">🚀 The Future of Education Loans</h2>
+        <p class="fade-in delay">Instant approvals. AI-driven guidance. Lowest interest rates.</p>
+        <button class="holo-button" onclick="scrollToApply()">Apply Now</button>
+    </section>
+
+    <section id="about" class="container">
+        <h2 class="fade-in">📚 What is an Education Loan?</h2>
+        <p class="fade-in delay">Loans that cover tuition, living expenses, and materials. Flexible repayment & low interest.</p>
+    </section>
+
+    <section id="types" class="container">
+        <h2 class="fade-in">💰 Types of Loans</h2>
+        <div class="loan-type fade-in">
+            <h3>Federal Loans</h3>
+            <p>Low interest, government-backed, and easier repayment.</p>
+        </div>
+        <div class="loan-type fade-in delay">
+            <h3>Private Loans</h3>
+            <p>Higher borrowing limits, but may require a co-signer.</p>
+        </div>
+    </section>
+
+    <section id="faq" class="container">
+        <h2 class="fade-in">❓ FAQs</h2>
+        <div class="faq-item fade-in">
+            <h3>Who can apply?</h3>
+            <p>Anyone accepted into an accredited institution.</p>
+        </div>
+    </section>
+
+    <section id="calculator" class="container">
+        <h2 class="fade-in">📊 Loan Calculator</h2>
+        <input type="number" id="amount" placeholder="Loan Amount">
+        <input type="number" id="rate" placeholder="Interest Rate (%)">
+        <input type="number" id="years" placeholder="Years">
+        <button class="holo-button" onclick="calculateLoan()">Calculate</button>
+        <h3>Monthly EMI: <span id="emi">0</span></h3>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</body>
+</html>
