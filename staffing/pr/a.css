@@ -1,3 +1,12 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 /* ================= */
 /* Base Styles       */
 /* ================= */
@@ -8,6 +17,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    /* overflow-x: hidden;  already set globally */
 }
 
 /* ----------------- */
@@ -22,7 +32,6 @@ body {
     position: relative;
 }
 
-/* HRManager Logo (text-based) */
 .nav-left h1 {
     color: #00c389; /* Green color for the logo */
     font-size: 24px;
@@ -30,18 +39,16 @@ body {
 
 /* For image logo if needed */
 .logo-img {
-    max-height: 60px; /* Adjust height to fit your design */
+    max-height: 60px;
     width: auto;
 }
 
-/* Navbar Right */
 .nav-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-/* Navbar Links */
 .nav-right ul {
     display: flex;
     list-style: none;
@@ -58,15 +65,13 @@ body {
 .nav-right ul li:hover .dropdown {
     display: block;
 }
-
-/* Dropdown Menu */
 .dropdown {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
     min-width: 150px;
     border-radius: 5px;
 }
@@ -161,11 +166,11 @@ body {
 .clients-section {
     text-align: center;
     padding: 40px 20px;
-    overflow: hidden; /* Prevent accidental horizontal scroll */
+    overflow: hidden;
 }
 .client-logos {
     display: flex;
-    justify-content: center; /* Center logos horizontally */
+    justify-content: center;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -178,11 +183,10 @@ body {
     scroll-snap-align: center;
     border-radius: 10px;
 }
-/* Hide scrollbar for WebKit */
 .client-logos::-webkit-scrollbar {
     display: none;
 }
-/* Link for testimonials */
+/* Testimonials link */
 .see-testimonials {
     color: #00c389;
     text-decoration: none;
@@ -199,7 +203,7 @@ body {
     padding: 60px 30px 30px;
     text-align: center;
     border-radius: 25px;
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -243,7 +247,7 @@ body {
     width: 270px;
     font-size: 16px;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
 }
 .search-container button {
     background-color: black;
@@ -254,7 +258,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     border: none;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
 }
 .search-container button:hover {
     background-color: #333;
@@ -324,6 +328,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 100px;
+    gap: 40px; /* Increased gap between text and image */
 }
 .ex {
     flex: 1;
@@ -392,7 +397,7 @@ body {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
 }
 .job-board-item h3 {
     font-size: 20px;
@@ -437,8 +442,9 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    width: calc(33.33% - 20px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px);
+    max-width: 300px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
     text-align: center;
     border: 2px solid #00c389;
 }
@@ -474,6 +480,11 @@ body {
 .plan-button:hover {
     background-color: #00c389;
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .plan-item {
+        width: calc(50% - 20px);
+    }
+}
 @media (max-width: 768px) {
     .plan-item {
         width: 100%;
@@ -490,7 +501,7 @@ body {
     text-align: center;
 }
 .your-work-container h2 {
-    color: rgb(255, 255, 255);
+    color: rgb(255,255,255);
 }
 .your-work-container p {
     color: white;
@@ -531,7 +542,7 @@ body {
 }
 .your-data-content p {
     font-size: 18px;
-    color: #000000;
+    color: #000;
     line-height: 1.5;
 }
 .read-more-btn {
@@ -634,8 +645,8 @@ body {
     background: #f8f8f8;
     padding: 20px;
     border-radius: 10px;
-    width: 30%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
 }
 .testimonial-card.active {
@@ -782,11 +793,11 @@ body {
 
 /* For screens up to 768px */
 @media (max-width: 768px) {
-    /* Navbar: Adjust padding if needed */
+    /* Navbar adjustments */
     .navbar {
         padding: 15px 20px;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     /* Hero: Stack elements vertically */
     .hero {
@@ -796,6 +807,7 @@ body {
     .text {
         max-width: 100%;
         margin-bottom: 20px;
+        text-align: center;
     }
     .image-container {
         width: 100%;
@@ -808,14 +820,14 @@ body {
     }
     /* Navbar dropdown adjustments */
     .nav-right ul {
-        display: none; /* If using a mobile menu, this would be toggled */
+        display: none; /* Toggle this with a hamburger if desired */
     }
     /* Adjust navbar buttons */
     .login, .signup {
         padding: 8px 16px;
         font-size: 14px;
     }
-    /* Clients Section: Stack carousel items vertically if needed */
+    /* Clients Section: Stack carousel items vertically */
     .client-logos {
         flex-direction: column;
         gap: 20px;
