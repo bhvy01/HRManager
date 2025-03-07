@@ -325,11 +325,13 @@ body {
 /* ----------------- */
 .ex-container {
     display: flex;
+    flex-direction: row-reverse; /* Reverses the order: image on left, text on right */
     justify-content: space-between;
     align-items: center;
     padding: 100px;
     gap: 40px; /* Increased gap between text and image */
 }
+
 .ex {
     flex: 1;
     max-width: 50%;
@@ -369,7 +371,6 @@ body {
     max-width: 600px;
     border-radius: 10px;
 }
-
 /* ----------------- */
 /* Job Boards Section */
 /* ----------------- */
@@ -521,82 +522,34 @@ body {
     background-color: #333;
 }
 
-/* ----------------- */
-/* Your Data Section */
-/* ----------------- */
+/* Your Data Section - Updated */
 .your-data-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f8f8;
+    background-color: white; /* Changed background to white */
     padding: 60px 8%;
     height: 450px;
 }
+
 .your-data-content {
-    max-width: 50%;
+    max-width: 55%;  /* Allowing more space for text */
+    text-align: left;
 }
+
 .your-data-content h2 {
     font-size: 36px;
     font-weight: bold;
     color: black;
 }
+
 .your-data-content p {
     font-size: 18px;
     color: #000;
     line-height: 1.5;
-}
-.read-more-btn {
-    display: inline-block;
-    background-color: #1cc5a3;
-    color: white;
-    padding: 14px 28px;
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
     margin-top: 20px;
-    transition: background 0.3s ease;
-}
-.read-more-btn:hover {
-    background-color: #14a78c;
-}
-.your-data-image {
-    max-width: 45%;
-    height: auto;
 }
 
-/* ----------------- */
-/* New Section       */
-/* ----------------- */
-.new-section-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f8f8f8;
-    padding: 60px 8%;
-    height: 450px;
-}
-.new-section-image {
-    max-width: 45%;
-    height: auto;
-}
-.new-section-content {
-    max-width: 50%;
-    text-align: left;
-}
-.new-section-content h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: black;
-}
-.new-section-content h2 span {
-    color: #1cc5a3;
-}
-.new-section-content p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.5;
-}
 .read-more-btn {
     display: inline-block;
     background-color: black;
@@ -609,8 +562,35 @@ body {
     margin-top: 20px;
     transition: background 0.3s ease;
 }
+
 .read-more-btn:hover {
     background-color: #333;
+}
+
+.your-data-image {
+    max-width: 35%;  /* Reduced image width to make it smaller */
+    height: auto;
+}
+
+/* Responsive adjustments for screens up to 768px */
+@media (max-width: 768px) {
+    .your-data-container {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 8%;
+        text-align: center;
+    }
+    .your-data-content,
+    .your-data-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .your-data-content h2 {
+        font-size: 28px;
+    }
+    .your-data-content p {
+        font-size: 16px;
+    }
 }
 
 /* ----------------- */
