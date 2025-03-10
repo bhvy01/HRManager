@@ -4,23 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>HR & Payroll Management</title>
-
-  <!-- Your Main CSS -->
+  <!-- Main CSS -->
   <link rel="stylesheet" href="a.css" />
-
   <!-- Owl Carousel CSS (CDN) -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
-
 <body>
-  <!-- Fixed Navbar -->
+  <!-- Fixed Full-Width Navbar -->
   <header class="navbar">
     <div class="nav-container">
       <div class="nav-left">
@@ -29,7 +20,7 @@
         </a>
       </div>
       <div class="nav-right">
-        <!-- Hamburger icon -->
+        <!-- Hamburger icon for mobile -->
         <div class="hamburger" id="hamburger">&#9776;</div>
         <!-- Navigation Menu -->
         <ul id="nav-menu">
@@ -88,22 +79,18 @@
       </div>
     </div>
   </header>
-  
 
-  <!-- Main Content Container (offset to avoid fixed navbar) -->
+  <!-- Main Content Container (Content is centered) -->
   <div class="main-content">
     <!-- Hero Section -->
     <section class="hero">
       <div class="text">
         <h3>HRManager Streamline HR & Payroll</h3>
         <p>
-          Your Trusted HR Business Partner at HR Manager  
-          We provide comprehensive human resource services tailored to help businesses thrive.  
-          From talent acquisition and employee engagement to compliance and performance management,  
-          we offer strategic solutions that enhance workplace productivity and culture.  
-          With a commitment to excellence and innovation, we empower businesses to build strong,  
-          motivated teams while ensuring compliance with HR best practices. Partner with us for  
-          seamless HR solutions that drive success!
+          Your Trusted HR Business Partner at HR Manager. We provide comprehensive human resource services tailored to help businesses thrive.
+          From talent acquisition and employee engagement to compliance and performance management, we offer strategic solutions that enhance productivity and culture.
+          With a commitment to excellence and innovation, we empower businesses to build strong, motivated teams while ensuring compliance with HR best practices.
+          Partner with us for seamless HR solutions that drive success!
         </p>
         <a href="signup.html" class="signup">Connect with Us Today</a>
       </div>
@@ -112,9 +99,27 @@
       </div>
     </section>
 
-   
+    <!-- Ranking Stats -->
+    <div class="ranking-stats">
+      <div class="stat-item">
+        <p class="stat-heading">Ranked as <span>Number #1</span></p>
+        <p class="stat-sub">Online HR Software Globally</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-heading">28,000 +</p>
+        <p class="stat-sub">Companies Onboard</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-heading">28,000 +</p>
+        <p class="stat-sub">Companies Onboard</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-heading">28,000 +</p>
+        <p class="stat-sub">Companies Onboard</p>
+      </div>
+    </div>
 
-    <!-- Owl Carousel for Clients -->
+    <!-- Clients Section (Owl Carousel) -->
     <section class="clients-section">
       <h2>Our Trusted Clients</h2>
       <div class="carousel-wrapper">
@@ -175,9 +180,7 @@
         <div class="sup">
           <h1>Comprehensive 24/7 Technical Support</h1>
           <p>
-            From setup to ongoing support, we’re with you every step of the way,  
-            ensuring that your accounting processes are streamlined, giving you  
-            the confidence to focus on growth.
+            From setup to ongoing support, we’re with you every step of the way, ensuring that your accounting processes are streamlined, giving you the confidence to focus on growth.
           </p>
           <a href="signup.html" class="sup-button">Learn more</a>
         </div>
@@ -187,37 +190,59 @@
       </div>
     </section>
 
-    <!-- Expertise / Ex-Clarity Section -->
+    <!-- Expertise Section -->
     <section class="ex-clarity">
       <div class="ex-container">
-        <div class="ex">
-          <h1>Expert Guidance for Plans Clarity</h1>
-          <p>
-            Our team provides the tools and support needed to help your business  
-            manage finances effectively. We create user-friendly software that  
-            promotes efficiency and accuracy in accounting practices.
-          </p>
-          <a href="signup.html" class="ex-button">Try it now</a>
+          <!-- Expert Guidance Content -->
+          <div class="ex">
+              <h1>Expert Guidance for Plans Clarity</h1>
+              <p>
+                  Our team provides the tools and support needed to help your business manage finances effectively. We create user-friendly software that promotes efficiency and accuracy in accounting practices.
+              </p>
+              <a href="signup.html" class="ex-button">Try it now</a>
+          </div>
+  
+          <!-- Orbital Animation (Replacing Image) -->
+          <div class="orbit-container">
+            <div class="center-logo">
+                <img src="HRManager.jpg" alt="HR Manager" width="60">
+            </div>
+            
+            <!-- Orbit Paths (Dotted Circles Passing Through Center) -->
+            <div class="orbit-path inner-path"></div>
+            <div class="orbit-path outer-path"></div>
+        
+            <!-- Inner Orbit -->
+            <div class="inner-orbit">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        
+            <!-- Outer Orbit -->
+            <div class="outer-orbit">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
         </div>
-        <div class="clarity-image">
-          <img src="sup.png" alt="Expert Guidance" class="sup-image">
-        </div>
-      </div>
-    </section>
+        
+        
+  </section>
+  
 
     <!-- Your Data Section -->
     <section class="your-data-container">
       <div class="your-data-content">
         <h2>100% your data</h2>
         <p>
-          The app is open source and your notes are saved to an open format,  
-          so you'll always have access to them. It uses End-To-End Encryption  
-          (E2EE) to secure your notes and ensure no one but yourself can  
-          access them.
+          The app is open source and your notes are saved to an open format, so you'll always have access to them. It uses End-To-End Encryption (E2EE) to secure your notes and ensure no one but yourself can access them.
         </p>
         <a href="#" class="read-more-btn">Read more →</a>
       </div>
-      <img src="sup.png" class="your-data-image" alt="Data Security Image">
+      <img src="sup.png" alt="Data Security Image" class="your-data-image">
     </section>
 
     <!-- Testimonials Section -->
@@ -227,8 +252,7 @@
       <div class="testimonial-cards">
         <div class="testimonial-card">
           <p>
-            “If you haven’t tried our HR solutions, you need to give it a shot!  
-            The user-first experience makes collaboration so much easier.”
+            “If you haven’t tried our HR solutions, you need to give it a shot! The user-first experience makes collaboration so much easier.”
           </p>
           <div class="user-info">
             <img src="sup.png" alt="User 1">
@@ -240,8 +264,7 @@
         </div>
         <div class="testimonial-card active">
           <p>
-            “Our payroll automation saved us countless hours every month.  
-            Highly recommended!”
+            “Our payroll automation saved us countless hours every month. Highly recommended!”
           </p>
           <div class="user-info">
             <img src="sup.png" alt="User 2">
@@ -253,8 +276,7 @@
         </div>
         <div class="testimonial-card">
           <p>
-            “The analytics dashboard gives clear insights into our workforce.  
-            It’s become indispensable.”
+            “The analytics dashboard gives clear insights into our workforce. It’s become indispensable.”
           </p>
           <div class="user-info">
             <img src="sup.png" alt="User 3">
@@ -270,58 +292,55 @@
         <button class="next-btn">▶</button>
       </div>
     </section>
-
-<!-- Footer Section (Horizontal Layout) -->
-<!-- Full-Width Footer -->
-<footer class="full-footer">
-  <div class="footer-content">
-    <div class="footer-section logo-section">
-      <a href="index.html">
-        <img src="logohrmanag.png" alt="HR Manager Logo">
-      </a>
-    </div>
-    <div class="footer-section">
-      <h4>HR Manager</h4>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Expertise</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Job Seeker</a></li>
-        <li><a href="#">Employer</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>Group Brands</h4>
-      <ul>
-        <li><a href="#">TaxManager</a></li>
-        <li><a href="#">CredManager</a></li>
-        <li><a href="#">InsureManager</a></li>
-        <li><a href="#">HRManager</a></li>
-        <li><a href="#">StartupManager</a></li>
-        <li><a href="#">RiseIT360</a></li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>More</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-    </div>
   </div>
-  <div class="footer-bottom">
-    <p>© 2025 HR Manager. All rights reserved.</p>
-    <div class="footer-bottom-links">
-      <a href="#">Terms & Privacy</a>
+
+  <!-- Full-Width Footer -->
+  <footer class="full-footer">
+    <div class="footer-content">
+      <div class="footer-section logo-section">
+        <a href="index.html">
+          <img src="logohrmanag.png" alt="HR Manager Logo">
+        </a>
+      </div>
+      <div class="footer-section">
+        <h4>HR Manager</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Expertise</a></li>
+          <li><a href="#">Resources</a></li>
+          <li><a href="#">Job Seeker</a></li>
+          <li><a href="#">Employer</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Group Brands</h4>
+        <ul>
+          <li><a href="#">TaxManager</a></li>
+          <li><a href="#">CredManager</a></li>
+          <li><a href="#">InsureManager</a></li>
+          <li><a href="#">HRManager</a></li>
+          <li><a href="#">StartupManager</a></li>
+          <li><a href="#">RiseIT360</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>More</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</footer>
+    <div class="footer-bottom">
+      <p>© 2025 HR Manager. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Terms & Privacy</a>
+      </div>
+    </div>
+  </footer>
 
-
-
-
-  <!-- Scripts at the bottom for faster page loading -->
+  <!-- Scripts -->
   <!-- jQuery (CDN) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- Owl Carousel JS (CDN) -->
@@ -333,20 +352,14 @@
     $(document).ready(function(){
       $('.owl-carousel').owlCarousel({
         loop: true,
-        margin: 40,              // Gap between items (adjust as needed)
+        margin: 40,
         autoplay: true,
-        autoplayTimeout: 3000,   // 3 seconds between slides
+        autoplayTimeout: 3000,
         autoplayHoverPause: true,
         responsive: {
-          0: {
-            items: 1
-          },
-          600: {
-            items: 3
-          },
-          1000: {
-            items: 5
-          }
+          0: { items: 1 },
+          600: { items: 3 },
+          1000: { items: 5 }
         }
       });
     });
